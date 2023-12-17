@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generador de QR</title>
+    <script src="assets/script/qrcode.min.js"></script>
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <form id="contactoForm">
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" id="Nombre" name="Nombre"><br>
+        <label for="Telefono">Telefono:</label><br>
+        <input type="text" id="Telefono" name="Telefono"><br>
+        <label for="Correo">Correo:</label><br>
+        <input type="email" id="Correo" name="Correo"><br><br>
+        <input type="button" value="Generar QR" onclick="generateQR()"><br>
+    </form> 
+
+    <div id="qrcode"></div>
+
+    <script src="assets/script/contact_form.js"></script>
+</body>
+</html>
